@@ -9,9 +9,19 @@ PHP扩展程序，为PHP提供对I2C（Inter－Integrated Circuit）总线基本
 
 ```php
 //实例化
-$i2c=new I2C();
+$i2c=new i2c();
+
+//打开设备
+$i2c->open($adapter,$addr);
 
 
+//向一个地址写入数据
+$subaddr=0x2;
+$i2c->write($subaddr, 0x00);
+
+
+//读取数据
+$data=$i2c->read($subaddr);
 
 ```
 
