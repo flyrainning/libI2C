@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("libi2c", "for libi2c support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("libi2c", "enable libi2c support", "no");
+
+if (PHP_LIBI2C != "no") {
+	EXTENSION("libi2c", "libi2c.c");
+}
+
