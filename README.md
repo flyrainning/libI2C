@@ -1,5 +1,6 @@
 # libI2C
 PHP扩展程序，为PHP提供对I2C（Inter－Integrated Circuit）总线基本操作的支持，可以使用php直接操作I2C总线进行通讯。
+编译此扩展需要安装libi2c-dev库。debian系列可以使用命令`apt-get install libi2c-dev`安装
 
 > **注意：**本扩展基于Linux内核i2c驱动，目前能支持的系统尚未全面测试，已在 `cubieboard 2` 开发板中进行测试，理论上常见的全志系列cpu的开发板和迷你电脑都能够支持，比如树莓派。
 
